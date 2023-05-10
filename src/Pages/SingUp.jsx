@@ -59,7 +59,8 @@ export const Signup = () => {
                       ...values,
                       id: uuidv4(),
                       wallet: 0,
-                      orders: 0,
+                      orders: [],
+                      cart: [],
                     })
                     .then((response) => {
                       console.log(response.data);
