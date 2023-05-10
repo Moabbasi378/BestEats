@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "totalspent": 0,
+      "firstName": "danial",
+      "cart": [
+        1,
+        3,
+        5,
+        10,
+        4,
+        4,
+        2,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "lastName": "rezaei",
+      "email": "dani@gmail.com",
+      "address": "valiasr",
+      "phone": "09199882687",
+      "password": "789456123",
+      "wallet": 0,
+      "orders": [
+        [
+          1,
+          5,
+          6,
+          8
+        ],
+        [
+          5,
+          2,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          12
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "id": "f2c94694-7da7-49a7-ba68-c290aa3f04c8"
+    },
+    {
+      "totalspent": 0,
+      "firstName": "mostafa",
+      "lastName": "fatehi",
+      "email": "most@gmail.com",
+      "phone": "0919988562",
+      "address": "choobindar dast rast",
+      "password": "789456123",
+      "id": "60edaa8f-e3e1-41c3-98e9-e771ef0cdab4",
+      "wallet": 0,
+      "orders": [
+        [
+          1,
+          5,
+          6,
+          8
+        ],
+        [
+          5,
+          2,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          12
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    {
+      "firstName": "sadio",
+      "cart": [],
+      "lastName": "mane",
+      "email": "sad@gmail.com",
+      "address": "munich",
+      "phone": "006824641267",
+      "password": "123456789",
+      "wallet": 0,
+      "orders": [],
+      "id": "4f5b8b1e-2374-494b-88e3-867ee7c6611d"
+    }
+  ],
+  "foods": [
+    {
+      "src": "images/pasta1.jpg",
+      "name": "Pasta alfredo",
+      "price": 15,
+      "type": "pasta",
+      "discription": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.",
+      "time": 15,
+      "id": 1
+    },
+    {
+      "src": "images/soup2.jpg",
+      "name": "Mashroom Soup",
+      "price": 10,
+      "type": "soup",
+      "discription": "Tomato soup is a soup with tomatoes as the primary ingredient. It can be served hot or cold, and may be made in a variety of ways. It may be smooth in texture, and there are also recipes that include chunks of tomato, cream, chicken or vegetable stock, vermicelli, chunks of other vegetables and meatballs",
+      "time": 5,
+      "id": 2
+    },
+    {
+      "src": "images/soup3.jpg",
+      "name": "Tamato Soup",
+      "price": 8,
+      "type": "soup",
+      "discription": "Tomato soup is a soup with tomatoes as the primary ingredient. It can be served hot or cold, and may be made in a variety of ways. It may be smooth in texture, and there are also recipes that include chunks of tomato, cream, chicken or vegetable stock, vermicelli, chunks of other vegetables and meatballs",
+      "time": 5,
+      "id": 3
+    },
+    {
+      "src": "images/pasta2.jpg",
+      "name": "Pasta Meatball",
+      "price": 20,
+      "type": "pasta",
+      "discription": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.",
+      "time": 30,
+      "id": 4
+    },
+    {
+      "src": "images/pizza1.jpg",
+      "name": "Pizza peperouni",
+      "price": 22,
+      "type": "pizza",
+      "discription": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.",
+      "time": 30,
+      "id": 5
+    },
+    {
+      "src": "images/salad1.jpg",
+      "name": "Vegtable Salad",
+      "price": 10,
+      "type": "salad",
+      "discription": "A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside",
+      "time": 10,
+      "id": 6
+    },
+    {
+      "src": "images/salad2.jpg",
+      "name": "Ceaser Salad",
+      "price": 15,
+      "type": "salad",
+      "discription": "A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside",
+      "time": 10,
+      "id": 7
+    },
+    {
+      "src": "images/soup4.jpg",
+      "name": "Vegtable Soup",
+      "price": 12,
+      "type": "soup",
+      "discription": "Tomato soup is a soup with tomatoes as the primary ingredient. It can be served hot or cold, and may be made in a variety of ways. It may be smooth in texture, and there are also recipes that include chunks of tomato, cream, chicken or vegetable stock, vermicelli, chunks of other vegetables and meatballs",
+      "time": 15,
+      "id": 8
+    },
+    {
+      "src": "images/burger1.jpg",
+      "name": "Double burger",
+      "price": 25,
+      "type": "burger",
+      "discription": "A hamburger, or simply burger, is a sandwich consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.",
+      "time": 15,
+      "id": 9
+    },
+    {
+      "src": "images/rice3.jpg",
+      "name": "chicken & rice",
+      "price": 30,
+      "type": "chicken",
+      "time": 15,
+      "id": 10,
+      "discription": "Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising chickens—in comparison to mammals such as cattle or hogs—chicken meat and chicken eggs have become prevalent in numerous cuisines."
+    },
+    {
+      "src": "images/pizza2.jpg",
+      "name": "Pizza Vagtables",
+      "price": 22,
+      "type": "pizza",
+      "discription": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.",
+      "time": 15,
+      "id": 11
+    },
+    {
+      "src": "images/pasta1.jpg",
+      "name": "Pasta alfredo",
+      "price": 20,
+      "type": "pasta",
+      "discription": "Pasta is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking.",
+      "time": 15,
+      "id": 12
+    },
+    {
+      "src": "images/soup5.jpg",
+      "name": "Hot Soup",
+      "price": 12,
+      "type": "soup",
+      "discription": "Tomato soup is a soup with tomatoes as the primary ingredient. It can be served hot or cold, and may be made in a variety of ways. It may be smooth in texture, and there are also recipes that include chunks of tomato, cream, chicken or vegetable stock, vermicelli, chunks of other vegetables and meatballs",
+      "time": 15,
+      "id": 13
+    }
+  ]
+}

@@ -1,43 +1,71 @@
 import {
-  Bookmark,
   BookmarkAddOutlined,
+  Check,
   Close,
   Download,
-  Favorite,
   FavoriteBorderOutlined,
-  FavoriteOutlined,
-  FireTruck,
   GroupAddOutlined,
-  Help,
   HelpOutline,
-  LocalShipping,
   LocalShippingOutlined,
   MenuOutlined,
+  Person,
   SearchOutlined,
-  Shop,
-  Shop2,
   ShoppingBasket,
   Wallet,
-  WalletOutlined,
 } from "@mui/icons-material";
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Badge } from "./Bagde";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [userData, setUserData] = useState(null);
+
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      axios
+        .get(`http://localhost:8000/users/${token}`)
+        .then((response) => {
+          setUserData(response.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+  }, []);
 
   return (
-    <div className="max-w-[1980px] mx-auto flex justify-between items-center p-4">
+    <div className=" mx-auto flex justify-between items-center p-4">
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <MenuOutlined />
         </div>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2">
+        <Link
+          to="/"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2"
+        >
           Best <span className="font-bold ">Eats</span>
-        </h1>
-        <div className="hidden lg:flex bg-gray-200 rounded-full p-1 text-[14px]">
-          <p className="bg-black text-white rounded-full p-2">Delivery</p>
-          <p className="p-2 ">pickup</p>
-        </div>
+        </Link>
+
+        {token ? (
+          <Link
+            to="/profile"
+            className="hidden lg:flex bg-gray-200 rounded-full p-3 text-[14px]"
+          >
+            Profile <Person />
+          </Link>
+        ) : (
+          <Link
+            to="/login"
+            className="hidden lg:flex bg-gray-200 rounded-full p-3 text-[14px]"
+          >
+            Log in <Person />
+          </Link>
+        )}
       </div>
       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
         <SearchOutlined size={20} />
@@ -47,13 +75,29 @@ export const Navbar = () => {
           className="bg-transparent p-2 focus:outline-none w-full"
         />
       </div>
-
-      <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full ">
-        <ShoppingBasket className="mr-2" /> cart
-      </button>
+      {token ? (
+        <Link to="/cart">
+          <div className="hidden md:flex">
+            <Badge count={userData?.cart.length}>
+              <button className="bg-black text-white  items-center py-2 rounded-full ">
+                <ShoppingBasket className="mr-2" /> cart
+              </button>
+            </Badge>
+          </div>
+        </Link>
+      ) : (
+        <Link to="/login">
+          <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full ">
+            <ShoppingBasket className="mr-2" /> cart
+          </button>
+        </Link>
+      )}
 
       {nav ? (
-        <div className="bg-black/80 fixed left-0 w-full h-screen z-10 top-0 "></div>
+        <div
+          className="bg-black/80 fixed left-0 w-full h-screen z-10 top-0"
+          onClick={() => setNav(!nav)}
+        ></div>
       ) : (
         ""
       )}
