@@ -33,9 +33,7 @@ Once the app is running, you can browse through different food items on the home
 
 # Contributing
 
-Contributions to this project are welcome. To contribute, follow these
-
-## steps:
+Contributions to this project are welcome. To contribute, follow these steps:
 
 1. Fork the project.
 2. Create a new branch.
