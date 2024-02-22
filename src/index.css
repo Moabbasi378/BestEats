@@ -7,6 +7,13 @@
     @apply border rounded-xl px-5 py-1;
   }
 }
+
+@layer base {
+  Box {
+    @apply bg-sky-600 border rounded-xl px-10 py-10;
+  }
+}
+
 .loader {
   border-top-color: #fb8c00;
   -webkit-animation: spin 1s ease-in-out infinite;
